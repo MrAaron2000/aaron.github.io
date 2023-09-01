@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<meta name="viewpoint" content="width=device-width, initail-scale=1.0">
+	<title>Personal Website</title>
+	<link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <div class="navbar">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class='bx bx-x-circle' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-menu' onclick="openmenu()"></i>
+            </nav>
+        </div>
+
+            <div class="header-text">
+                <p>Future Web Developer</p>
+                <h1>Hi, I'm <span>Aaron</span><br> Capiral From Batangas City</h1>
+            </div>
+        </div>
+    </div>
+
+<!---------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>Hello, my name is Aaron, and I'm a web developer who is passionate about HTML, CSS, and JavaScript. I enjoy developing creative and user-friendly websites and web applications. I appreciate working in groups and constantly learning new things.</p>
+
+                    <div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+						<p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+						<p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+					</div>
+
+                    <div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>UI/UX</span><br>Designing Web Interface</li>
+							<li><span>Frontend Web Development</span><br>Build front-end portion of websites and web applications</li>
+							<li><span>Responsive Web Design</span><br>Optimizes web page performance across various devices and screen sizes</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>2019 - 2023</span><br>Bachelor's Degree in Information Technology at Westmead international School Inc.</li>
+							<li><span>2017 - 2019</span><br>General Acaddemic Strand at Alangilan Senior Highschool</li>
+							<li><span>2014 - 2017</span><br>Batangas National Highschool</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>2023</span><br>SITESPHIL-HKNL: Cyber Security Conference</li>
+							<li><span>2023</span><br>Stack league x Manulife IT Delivery Center Tech Session : Frontend Web Development</li>
+							<li><span>2023</span><br>3rd iSITE Conference</li>
+						</ul>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+					<i class='bx bx-code-alt'></i>
+					<h2>UI/UX Design </h2>
+					<p>	Design the user interface for an app, website, or other form of interactive media.</p>
+					<a href="#">learn more</a>
+				</div>
+
+				<div>
+					<i class='bx bx-crop' ></i>
+					<h2>Web Design </h2>
+					<p>	Creating interfaces, navigation, and aesthetics for websites for businesses and clients.</p>
+					<a href="#">learn more</a>
+				</div>
+
+				<div>
+					<i class='bx bx-devices'></i>
+					<h2>Responsive Design </h2>
+					<p>	Approach to device-aware content adaption that ensures seamless viewing across multiple sizes and devices.</p>
+					<a href="#">learn more</a>
+				</div>
+            </div>
+        </div>
+    </div>
+<!---------------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My <span>Work</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work-1.jpg">
+                <div class="layer">
+                    <h3>UI/UX Design</h3>
+                    <p>One among numerous non-technical roles in tech that doesn't require any coding or programming skills.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img/work-2.jpg">
+                <div class="layer">
+                    <h3>Web Design</h3>
+                    <p>Responsible for creating the design and layout of a website or web pages.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img/work-3.jpg">
+                <div class="layer">
+                    <h3>Responsive Design</h3>
+                    <p>Creating web pages that look good on all devices.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!---------------contact------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact <span>Me</span></h1>
+                <p><i class='bx bx-send'></i> mr.capiralaaron@gmail.com</p>
+                <p><i class='bx bx-phone' ></i> +639567527324</p>
+
+                <div class="social-icons">
+                    <a href="https:/facebook.com/arncprl"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://twitter.com/arncprl?t=hRLpwzIcXKCEteARkjGpAg&s=03"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.linkedin.com/in/aaron-capiral-2a6b55287/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://instagram.com/arncprl?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class='bx bxl-instagram'></i></a>
+                </div>
+                <a href="img/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="copyright">
+        <p>Copyright @ Aaron. Personal Portfolio Website!!</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+
+		function opentab(tabname) {
+			for (tablink of tablinks) {
+				tablink.classList.remove("active-link");
+			}
+			for (tabcontent of tabcontents) {
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+	</script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxH0yFWfz6LV8gzSUYRLSU8a8HprNZwCzWqNsxpKYtzzcXLavwoXgzVVR18XoFE1BIG/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+</body>
+</html>
